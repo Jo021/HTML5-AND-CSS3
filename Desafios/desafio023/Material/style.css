@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+:root {
+    --font1: Arial, Helvetica, sans-serif;
+    --font2: 'Balsamiq Sans', cursive;
+    --font3: 'Prompt', sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: lightgray;
+    font-family: var(--font1)
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 50px;
+   
+}
+header > p {
+    padding-bottom: 50px;
+}
+ header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+ header a:hover, footer a:hover {
+    text-decoration: underline;
+    
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+    font-family: var(--font3);
+    
+    
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgba(51, 51, 51, 0.13);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    background-color:  rgba(0, 0, 0, 0.205);
+    width: 400px;
+    padding: 10px;
+    text-shadow: 2px 1px 0px black;
+    border-radius: 20px;
+    
+}
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
